@@ -1,0 +1,17 @@
+This is a notes page to leave how I did this project and questions I came across and how I went about solving them.
+
+Questions/Issues
+
+1. I was having trouble trying to get the static methods to work. Some of the questions I googled were:
+    -How to call static methods without dot notation?
+    -How to call static methods without referencing class name?
+
+Ultimately the second question helped me solve the issue.  I learned about static imports.  Also learned that static imports
+should rarely be used because a lot of ambiguity could arise.  For example, you would like to know what class a method belongs to.
+
+2. In thinking about the Inventory class, I realized that with an array you need to know ahead of time the size or amount 
+of products you were going to have.  So basically I googled 
+    -array that changes size
+And that led me to Arraylists which can change dynamically.  I don't know if that is the right word.
+
+3. I was thinking about to use the inventory class without creating an instance of Inventory.  
