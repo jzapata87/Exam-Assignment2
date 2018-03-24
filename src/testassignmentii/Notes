@@ -14,4 +14,8 @@ of products you were going to have.  So basically I googled
     -array that changes size
 And that led me to Arraylists which can change dynamically.  I don't know if that is the right word.
 
-3. I was thinking about to use the inventory class without creating an instance of Inventory.  
+3. I was thinking about to use the inventory class without creating an instance of Inventory.  First I created INventory then 
+in the data field of the inventory class I created an arraylist.  Then in the Product class I created an Inventory object which 
+is an arraylist.  I also ended up doing it another way.  In the Inventory class, I only used implement static methods. I didnt use
+any data fields.  Then in product class I created a arraylist.  Then created a getter for the array list.  Then used the getter in
+the inventory class.  
