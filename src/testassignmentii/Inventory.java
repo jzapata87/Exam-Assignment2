@@ -9,29 +9,29 @@ import java.util.*;
 
 public class Inventory {
     
-    private static ArrayList<Product> myArray =new ArrayList<>();;
+    
     
 
     
     public static void addProduct(Product product){
-        myArray.add(product);
+        Product.getMyArray().add(product);
         
     }
     
     public static void removeProduct(Product product){
         
-        myArray.remove(product);
+        Product.getMyArray().remove(product);
         
     }
     
     public static void removeProductAtIndex(int n){
-        myArray.remove(n);
+        Product.getMyArray().remove(n);
     }
     
     public static Product getProduct(String string){
         
     
-        for (Product product : myArray){
+        for (Product product : Product.getMyArray()){
             
             if (product.getCode().equals(string)){
                 return product;
@@ -42,11 +42,6 @@ public class Inventory {
         }
         return null;
     }   
-        
-    
-                
-                
-    
 
     
     public static void printInventory(){
@@ -54,7 +49,7 @@ public class Inventory {
         System.out.println("Inventory");
         System.out.println("-----------");
         
-        for (Product product:myArray){ 
+        for (Product product:Product.getMyArray()){ 
             product.print();
             System.out.println("");
         }
